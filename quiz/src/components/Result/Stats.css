@@ -1,0 +1,405 @@
+.stats-container {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 0;
+}
+
+/* Score Overview */
+.score-overview {
+  background: linear-gradient(135deg, #0969da 0%, #0860ca 100%);
+  color: white;
+  padding: 40px;
+  border-radius: 16px;
+  margin-bottom: 32px;
+  text-align: center;
+}
+
+.main-score {
+  margin-bottom: 32px;
+}
+
+.score-circle {
+  display: inline-block;
+  margin-bottom: 24px;
+}
+
+.score-number {
+  font-size: 64px;
+  font-weight: 800;
+  line-height: 1;
+  text-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+.score-label {
+  font-size: 16px;
+  font-weight: 500;
+  opacity: 0.9;
+  margin-top: 8px;
+}
+
+.score-range {
+  max-width: 300px;
+  margin: 0 auto;
+}
+
+.range-bar {
+  height: 8px;
+  background: rgba(255, 255, 255, 0.3);
+  border-radius: 4px;
+  position: relative;
+  margin-bottom: 8px;
+}
+
+.range-fill {
+  height: 100%;
+  background: linear-gradient(90deg, #10b981, #34d399);
+  border-radius: 4px;
+  transition: width 0.8s ease;
+}
+
+.range-marker {
+  position: absolute;
+  top: -4px;
+  width: 16px;
+  height: 16px;
+  background: white;
+  border-radius: 50%;
+  transform: translateX(-50%);
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+}
+
+.range-labels {
+  display: flex;
+  justify-content: space-between;
+  font-size: 12px;
+  opacity: 0.8;
+}
+
+.performance-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+  gap: 24px;
+}
+
+.performance-card {
+  background: rgba(255, 255, 255, 0.15);
+  backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  border-radius: 12px;
+  padding: 20px;
+  text-align: center;
+}
+
+.card-value {
+  font-size: 28px;
+  font-weight: 700;
+  margin-bottom: 4px;
+}
+
+.card-label {
+  font-size: 14px;
+  font-weight: 500;
+  margin-bottom: 2px;
+}
+
+.card-total {
+  font-size: 12px;
+  opacity: 0.8;
+}
+
+/* Breakdown Section */
+.breakdown-section {
+  background: white;
+  border: 1px solid #e1e4e8;
+  border-radius: 12px;
+  padding: 24px;
+  margin-bottom: 24px;
+}
+
+.section-title {
+  font-size: 20px;
+  font-weight: 600;
+  color: #24292e;
+  margin-bottom: 20px;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.breakdown-grid {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.breakdown-item {
+  padding: 16px;
+  background: #f6f8fa;
+  border-radius: 8px;
+}
+
+.breakdown-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 12px;
+}
+
+.breakdown-label {
+  font-weight: 600;
+  color: #24292e;
+}
+
+.breakdown-score {
+  font-size: 18px;
+  font-weight: 700;
+  color: #0969da;
+}
+
+.progress-bar {
+  height: 8px;
+  background: #e1e4e8;
+  border-radius: 4px;
+  overflow: hidden;
+  margin-bottom: 8px;
+}
+
+.progress-fill {
+  height: 100%;
+  background: linear-gradient(90deg, #0969da, #2196f3);
+  border-radius: 4px;
+  transition: width 0.8s ease;
+}
+
+.breakdown-details {
+  display: flex;
+  justify-content: space-between;
+  font-size: 14px;
+  color: #586069;
+}
+
+/* Insights Section */
+.insights-section {
+  background: white;
+  border: 1px solid #e1e4e8;
+  border-radius: 12px;
+  padding: 24px;
+  margin-bottom: 24px;
+}
+
+.insights-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 16px;
+}
+
+.insight-card {
+  display: flex;
+  gap: 16px;
+  padding: 16px;
+  background: #f6f8fa;
+  border-radius: 8px;
+}
+
+.insight-icon {
+  font-size: 24px;
+  flex-shrink: 0;
+}
+
+.insight-content {
+  flex: 1;
+}
+
+.insight-title {
+  font-weight: 600;
+  color: #24292e;
+  margin-bottom: 4px;
+}
+
+.insight-description {
+  font-size: 14px;
+  color: #586069;
+  line-height: 1.4;
+}
+
+/* Action Section */
+.action-section {
+  background: white;
+  border: 1px solid #e1e4e8;
+  border-radius: 12px;
+  padding: 24px;
+  margin-bottom: 24px;
+}
+
+.action-buttons {
+  display: flex;
+  gap: 16px;
+  margin-bottom: 20px;
+  flex-wrap: wrap;
+}
+
+.action-btn {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 12px 24px;
+  border: none;
+  border-radius: 8px;
+  font-size: 16px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  flex: 1;
+  min-width: 160px;
+  justify-content: center;
+}
+
+.action-btn.primary {
+  background: #0969da;
+  color: white;
+}
+
+.action-btn.primary:hover {
+  background: #0860ca;
+  transform: translateY(-1px);
+}
+
+.action-btn.secondary {
+  background: #f6f8fa;
+  color: #24292e;
+  border: 1px solid #d0d7de;
+}
+
+.action-btn.secondary:hover {
+  background: #f3f4f6;
+  transform: translateY(-1px);
+}
+
+.btn-icon {
+  font-size: 16px;
+}
+
+.share-section {
+  text-align: center;
+  padding-top: 16px;
+  border-top: 1px solid #e1e4e8;
+}
+
+/* Next Steps */
+.next-steps {
+  background: white;
+  border: 1px solid #e1e4e8;
+  border-radius: 12px;
+  padding: 24px;
+}
+
+.steps-grid {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.step-item {
+  display: flex;
+  gap: 16px;
+  padding: 16px;
+  background: #f6f8fa;
+  border-radius: 8px;
+}
+
+.step-number {
+  width: 32px;
+  height: 32px;
+  background: #0969da;
+  color: white;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 600;
+  flex-shrink: 0;
+}
+
+.step-content {
+  flex: 1;
+}
+
+.step-title {
+  font-weight: 600;
+  color: #24292e;
+  margin-bottom: 4px;
+}
+
+.step-description {
+  font-size: 14px;
+  color: #586069;
+  line-height: 1.4;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .score-overview {
+    padding: 24px;
+  }
+
+  .score-number {
+    font-size: 48px;
+  }
+
+  .performance-grid {
+    grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+    gap: 16px;
+  }
+
+  .performance-card {
+    padding: 16px;
+  }
+
+  .card-value {
+    font-size: 24px;
+  }
+
+  .action-buttons {
+    flex-direction: column;
+  }
+
+  .action-btn {
+    min-width: auto;
+  }
+
+  .insights-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .breakdown-section,
+  .insights-section,
+  .action-section,
+  .next-steps {
+    padding: 20px;
+  }
+}
+
+@media (max-width: 480px) {
+  .score-overview {
+    padding: 20px;
+  }
+
+  .score-number {
+    font-size: 40px;
+  }
+
+  .performance-grid {
+    grid-template-columns: 1fr;
+    gap: 12px;
+  }
+
+  .step-item,
+  .insight-card {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .step-number {
+    align-self: center;
+  }
+}
